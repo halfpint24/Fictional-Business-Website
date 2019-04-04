@@ -3,9 +3,13 @@
     Last Edited On: 4/4/2019
 */
 
+#wrapper, body, html {
+    height:100%;
+}
+
 body {
     background-color:rgb(232,232,232);
-    font-family:cursive;
+    font-family:Zilla Slab;
 }
 
 .parallax {
@@ -17,11 +21,82 @@ body {
 }
 
 .parallax, .parallax2 {
-    height:1000px;
-    background-position:center;
+    height:100%;
+    background-position:center bottom;
     background-attachment:fixed;
+}
+
+#opening {
+    height:25%;
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:rgba(50,50,50,.5);
+    border-radius:20px;
+    color:rgb(255,255,255);
+    text-align:center;
+    top:30%;
+    position:relative;
+}
+
+#opening section {
+    padding:5% 0%;
 }
 
 .content {
     background-color:rgb(232,232,232);
+    height:100%;
+    width:100%;
+    text-align:center;
+}
+
+.content p {
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+img {
+    width:15%;
+    height:25%;
+    padding:.5%;
+}
+
+h1 {
+    font-size:200%;
+}
+
+h2 {
+    font-size:150%;
+}
+
+h3 {
+    font-size:120%;
+}
+
+@media only screen and (max-width: 1080px) {
+    #opening {
+        width:100%;
+        height:100%;
+        top:0%;
+    }
+
+    img {
+        width:20%;
+        height:15%;
+    }
+}
+
+@media only screen and (max-height: 750px) and (min-width: 1080px) {
+    #opening {
+        height:40%;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    #opening {
+        width:100%;
+        height:100%;
+        top:0%;
+    }
 }
