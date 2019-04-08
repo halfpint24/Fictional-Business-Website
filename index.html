@@ -16,6 +16,36 @@
         <title>Home</title>
         <link href="styles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Zilla Slab" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#htmldiv, #cssdiv, #jsdiv, #javadiv, .selected").hide();
+                $("#html").click(function() {
+                    $("#html").hide();
+                    $("#cssdiv, #jsdiv, #javadiv, .selected").hide();
+                    $("#htmlselected, #css, #js, #java").fadeIn();
+                    $("#htmldiv").fadeIn();
+                });
+                $("#css").click(function() {
+                    $("#css").hide();
+                    $("#htmldiv, #jsdiv, #javadiv, .selected").hide();
+                    $("#cssselected, #html, #js, #java").fadeIn();
+                    $("#cssdiv").fadeIn();
+                });
+                $("#js").click(function() {
+                    $("#js").hide();
+                    $("#htmldiv, #cssdiv, #javadiv, .selected").hide();
+                    $("#jsselected, #html, #css, #java").fadeIn();
+                    $("#jsdiv").fadeIn();
+                });
+                $("#java").click(function() {
+                    $("#java").hide();
+                    $("#htmldiv, #cssdiv, #jsdiv, .selected").hide();
+                    $("#javaselected, #html, #css, #js").fadeIn();
+                    $("#javadiv").fadeIn();
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -46,17 +76,38 @@
                 <h1>Tutorials</h1>
 
                 <p>
-                    Learn:
+                    Click one of the images to load their descriptions and access their tutorials.
                 </p>
+                
+                <section id="langdescs">
+                    <div id="htmldiv"><p>HTML defines web page structure.</p></div>
+                    <div id="cssdiv"><p>CSS is used to style web pages.</p></div>
+                    <div id="jsdiv"><p>JS is used to add functionality to web pages.</p></div>
+                    <div id="javadiv"><p>Java makes stand-alone "Write Once-Run Anywhere" applications.</p></div>
+                </section>
 
-                <img src="images/html.png" alt="" />
-                <img src="images/css.png" alt="" />
-                <img src="images/js.png" alt="" />
-                <img src="images/java.png" alt="" />
+                <img src="images/html.png" alt="html" id="html" />
+                    <img src="images/htmlselected.png" alt="html" id="htmlselected" class="selected" />
+                <img src="images/css.png" alt="css" id="css" />
+                    <img src="images/cssselected.png" alt="css" id="cssselected" class="selected" />
+                <img src="images/js.png" alt="js" id="js" />
+                    <img src="images/jsselected.png" alt="js" id="jsselected" class="selected" />
+                <img src="images/java.png" alt="java" id="java" />
+                    <img src="images/javaselected.png" alt="java" id="javaselected" class="selected" />
 
             </div>
 
             <div class="parallax2"></div>
+
+            <div class="content">
+
+                <p>
+                    &copy;Copyright 2019 Collin's Tutorials Corporation. All rights reserved.
+                </p>
+
+                <h1>FOR EDUCATIONAL PURPOSES ONLY!</h1>>
+
+            </div>
 
         </div>
 
