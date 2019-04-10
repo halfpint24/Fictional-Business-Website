@@ -2,7 +2,7 @@
 
 <!--
     Creation Date: 4/4/2019
-    Last Edited On: 4/4/2019
+    Last Edited On: 4/10/2019
 -->
 
 <html>
@@ -21,28 +21,20 @@
             $(document).ready(function() {
                 $("#htmldiv, #cssdiv, #jsdiv, #javadiv, .selected").hide();
                 $("#html").click(function() {
-                    $("#html").hide();
-                    $("#cssdiv, #jsdiv, #javadiv, .selected").hide();
-                    $("#htmlselected, #css, #js, #java").fadeIn();
-                    $("#htmldiv").fadeIn();
+                    $("#html, #cssdiv, #jsdiv, #javadiv, .selected").hide();
+                    $("#htmlselected, #css, #js, #java, #htmldiv").fadeIn();
                 });
                 $("#css").click(function() {
-                    $("#css").hide();
-                    $("#htmldiv, #jsdiv, #javadiv, .selected").hide();
-                    $("#cssselected, #html, #js, #java").fadeIn();
-                    $("#cssdiv").fadeIn();
+                    $("#css, #htmldiv, #jsdiv, #javadiv, .selected").hide();
+                    $("#cssselected, #html, #js, #java, #cssdiv").fadeIn();
                 });
                 $("#js").click(function() {
-                    $("#js").hide();
-                    $("#htmldiv, #cssdiv, #javadiv, .selected").hide();
-                    $("#jsselected, #html, #css, #java").fadeIn();
-                    $("#jsdiv").fadeIn();
+                    $("#js, #htmldiv, #cssdiv, #javadiv, .selected").hide();
+                    $("#jsselected, #html, #css, #java, #jsdiv").fadeIn();
                 });
                 $("#java").click(function() {
-                    $("#java").hide();
-                    $("#htmldiv, #cssdiv, #jsdiv, .selected").hide();
-                    $("#javaselected, #html, #css, #js").fadeIn();
-                    $("#javadiv").fadeIn();
+                    $("#java, #htmldiv, #cssdiv, #jsdiv, .selected").hide();
+                    $("#javaselected, #html, #css, #js, #javadiv").fadeIn();
                 });
             });
         </script>
@@ -76,14 +68,14 @@
                 <h1>Tutorials</h1>
 
                 <p>
-                    Click one of the images to load their descriptions and access their tutorials.
+                    Click one of the images to load their descriptions. Click the box that appears to access the tutorial for the selected image.
                 </p>
                 
                 <section id="langdescs">
-                    <div id="htmldiv"><p>HTML defines web page structure.</p></div>
-                    <div id="cssdiv"><p>CSS is used to style web pages.</p></div>
-                    <div id="jsdiv"><p>JS is used to add functionality to web pages.</p></div>
-                    <div id="javadiv"><p>Java makes stand-alone "Write Once-Run Anywhere" applications.</p></div>
+                    <a href="html.html"><div id="htmldiv"><p>HTML defines web page structure. <span class="warning">Click this box to go to the HTML tutorial.</span></p></div></a>
+                    <a href="html.html"><div id="cssdiv"><p>CSS is used to style web pages.<span class="warning">Click this box to go to the CSS tutorial.</span></p></div></a>
+                    <a href="html.html"><div id="jsdiv"><p>JS is used to add functionality to web pages.<span class="warning">Click this box to go to the JS tutorial.</span></p></div></a>
+                    <a href="html.html"><div id="javadiv"><p>Java makes stand-alone "Write Once-Run Anywhere" applications.<span class="warning">Click this box to go to the Java tutorial.</span></p></div></a>
                 </section>
 
                 <img src="images/html.png" alt="html" id="html" />
