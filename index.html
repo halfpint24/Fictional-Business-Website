@@ -2,7 +2,7 @@
 
 <!--
     Creation Date: 4/4/2019
-    Last Edited On: 4/10/2019
+    Last Edited On: 4/11/2019
 -->
 
 <html>
@@ -17,27 +17,7 @@
         <link href="styles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Zilla Slab" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("#htmldiv, #cssdiv, #jsdiv, #javadiv, .selected").hide();
-                $("#html").click(function() {
-                    $("#html, #cssdiv, #jsdiv, #javadiv, .selected").hide();
-                    $("#htmlselected, #css, #js, #java, #htmldiv").fadeIn();
-                });
-                $("#css").click(function() {
-                    $("#css, #htmldiv, #jsdiv, #javadiv, .selected").hide();
-                    $("#cssselected, #html, #js, #java, #cssdiv").fadeIn();
-                });
-                $("#js").click(function() {
-                    $("#js, #htmldiv, #cssdiv, #javadiv, .selected").hide();
-                    $("#jsselected, #html, #css, #java, #jsdiv").fadeIn();
-                });
-                $("#java").click(function() {
-                    $("#java, #htmldiv, #cssdiv, #jsdiv, .selected").hide();
-                    $("#javaselected, #html, #css, #js, #javadiv").fadeIn();
-                });
-            });
-        </script>
+        <script src="picclick.js"></script>
     </head>
 
     <body>
