@@ -2,7 +2,7 @@
 
 <!--
     Creation Date: 4/10/2019
-    Last Edited On: 4/17/2019
+    Last Edited On: 4/24/2019
 -->
 
 <html>
@@ -60,6 +60,41 @@
             </div>
 
             <div class="parallax2"></div>
+
+            <div class="content">
+
+                <h1>Your First Web Site</h1>
+
+                <ol>
+
+                    <li>Open Notepad++. Press CTRL + ALT + S to open the save dialogue. Name the file <em>index.html</em>. In the <em>save as type</em> dropdown menu, select <em>Hyper Text Markup Language File</em>. <em>Note: file names can only contain letters, numbers, dash(-), underscore(_), and tilde(~).</em> <em>Note: We named the file index.html because browsers load html pages named index first under a given domain name. If you omit this in a real web site, then browsers will not know where to start and give an error.</em>
+                    </li>
+                    <li>Now it is time to write the code. All HTML documents must start with a document declaration so that the browser knows what version of HTML to use. Type <code>&lt;!DOCTYPE html&gt;</code> to do this.</li>
+                    <li>An HTML document is made up of <em>tags</em>. One type of tag is a container tag, which contains a start tag and and end tag. One type of a container tag is the <code>&lt;html&gt;</code> tag, which specifies that the code is HTML. All code minus the doctype must go in here. To make this tag, go under your <code>!doctype</code> and type:
+                    <br /><code>&lt;html&gt;
+                    <br />
+                    <br />&lt;/html&gt;</code>
+                    <br />Notice that the end tag has a forward slash(/) in front of the tag name, while the opening tag does not. If you omit this, then the browser can not tell where the tag starts and ends, which may result in an undesirable output.</li>
+                    <li>Let's put another tag in here. Using the same format from the html tag(and written inside of), write the <code>&lt;head&gt;</code> tag, complete with an opening and closing tag. It is written the same, but you write <code>&lt;head&gt;</code> instead of <code>&lt;html&gt;</code></li>
+                    <li>Inside the head tag, we need to specify a <em>character set</em>. This is a set of letters, numbers, and symbols that the browser uses. Everyone agrees that <strong>UTF-8</strong> is the best one. To use this character set, we use the <code>meta</code> tag, which is used to describe data about your site. Syntax(way of writing the code) for the meta tag is a little different. It is a self closing tag and has something called an <em>attribute</em>:
+                    <br /><code>&lt;meta charset="UTF-8" /&gt;</code>
+                    <br />An attribute specifies additional data about a tag. In this case, it is the character set. Also make sure not to use a closing tag like the other ones. Write it like it is written here.</li>
+                    <li>Inside the head tag, write &lt;title&gt;My First Web Site&lt;/title&gt;, you can replace <em>My First Web Site</em> with anything you want. This is the text that will appear on the tab on the top of the screen.</li>
+                    <li>We have written some basic HTML code, but our webpage is still just a blank screen. Let's add something right now. Add these tags:
+                        <br/>&lt;body&gt;
+                        <br/>&lt;h1&gt;<em>Anything you want</em>&lt;/h1&gt;
+                        <br/>&lt;p&gt;<em>Anything you want</em>&lt;/p&gt;
+                        <br/>&lt;/body&gt;
+                        <br />The body tag defines the visual content on the page.
+                        <br />The p tag defines a paragraph, and by default it has a Times New Roman font and a 16 pixel font size.
+                        <br />The h1 tag defines a header. By default, it is bolded and has a big font size. There are also other header tags that make the text smaller. These tags are h2, h3, h4, h5, and h6. There is no h7, it only goes to h6.
+                    </li>
+                    <li>We should be done! At the top of the screen, click Run and then Launch in Chrome, or whatever browser you want. Alternatively, you can press CTRL + ALT + SHIFT + R to launch in Chrome. Your code should look something like <a href="htmlexample1.html">this</a>(note: HTML ignores indentation and white space. Use this to make your code more readable):</li>
+                </ol>
+
+            </div>
+
+            <div class="parallax"></div>
 
             <div class="content">
 
