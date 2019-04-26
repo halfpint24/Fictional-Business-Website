@@ -19,4 +19,5 @@ $(document).ready(function() {
         $("#java, #htmldiv, #cssdiv, #jsdiv, .selected").hide();
         $("#javaselected, #html, #css, #js, #javadiv").fadeIn();
     });
+
 });
